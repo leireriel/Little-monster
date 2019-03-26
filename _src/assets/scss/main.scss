@@ -1,103 +1,114 @@
 body {
-    margin: 0;
-    background-image: radial-gradient(rgb(73, 128, 0), rgb(133, 170, 63));
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  background-image: radial-gradient(rgb(73, 128, 0), rgb(133, 170,63));
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body_monstruo {
+  background-color: rgb(97, 30, 102);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 100px white;
+}
+.body_eye {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: radial-gradient(white 1%, black 10%, black 30%, white 40%);
+  border: 3px solid purple;
+}
+.eye1 {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+.eye2 {
+  position: relative;
+  top: -30px;
+  left: 60px;
+}
+.eye3 {
+  position: relative;
+  top: -40px;
+  left: 100px;
+}
+.body_eyelidup, .body_eyeliddown {
+  width: 20px;
+  height: 9px;
+  background-color: purple;
+  border: 3px solid purple;
+  animation-name: eyelid-dinamic;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes eyelid-dinamic {
+  0% {
+    opacity: 0;
   }
-  .body_monstruo {
-    background-color: rgb(97, 30, 102);
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0 0 100px white;
+  90% {
+    opacity: 0;
   }
-  .body_eye {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-image: radial-gradient(white 1%, black 10%, black 30%, white 40%);
-    border: 3px solid purple;
+  95% {
+    opacity: 1;
   }
-  .eye1 {
-    position: relative;
-    top: 10px;
-    left: 20px;
+  100% {
+    opacity: 1;
   }
-  .eye2 {
-    position: relative;
-    top: -30px;
-    left: 60px;
-  }
-  .eye3 {
-    position: relative;
-    top: -40px;
-    left: 100px;
-  }
-  .body_eyelidup, .body_eyeliddown {
-      width: 20px;
-      height: 9px;
-      background-color: purple;
-      border: 3px solid purple;
-      animation-name: eyelid-dinamic;
-      animation-duration: 2.5s;
-      animation-iteration-count: infinite;
-      animation-fill-mode: forwards;
-  }
-  @keyframes eyelid-dinamic {
-      0% {
-        opacity: 0;
-      }
-      90% {
-        opacity: 0;
-      }
-      95% {
-          opacity: 1;
-      }
-      100% {
-          opacity: 1;
-      }
-  }
-  .body_eyelidup {
-    border-top-left-radius: 90px;
-    border-top-right-radius: 90px;
-  }
-  .body_eyeliddown {
-    border-bottom-left-radius: 90px;
-    border-bottom-right-radius: 90px;
-  }
-  .eyelid1 {
-    position: relative;
-    top: -6px;
-    left: -3px;
-  }
-  
-  .eyelid2 {
-    position: relative;
-    top: -6px;
-    left: -3px;
-  }
-  .eyelid3 {
-    position: relative;
-    top: -6px;
-    left: -3px;
-  }
-  .eyelid4 {
-    position: relative;
-    top: -8px;
-    left: -3px;
-  }
-  .eyelid5 {
-    position: relative;
-    top: -10px;
-    left: -3px;
-  }
-  .eyelid6 {
-    position: relative;
-    top: -10px;
-    left: -2px;
-  }
-  
+}
+.body_eyelidup {
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+}
+.body_eyeliddown {
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+.eyelid1 {
+  position: relative;
+  top: -6px;
+  left: -3px;
+}
+.eyelid2 {
+  position: relative;
+  top: -6px;
+  left: -3px;
+}
+.eyelid3 {
+  position: relative;
+  top: -6px;
+  left: -3px;
+}
+.eyelid4 {
+  position: relative;
+  top: -8px;
+  left: -3px;
+}
+.eyelid5 {
+  position: relative;
+  top: -10px;
+  left: -3px;
+}
+.eyelid6 {
+  position: relative;
+  top: -10px;
+  left: -2px;
+}
+.mouth {
+  border: 5px solid orangered;
+  border-top: transparent;
+  width: 100px;
+  height: 50px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  border-left: transparent;
+  border-right: transparent;
+  position: relative;
+  left: 20px;
+}
+
   
