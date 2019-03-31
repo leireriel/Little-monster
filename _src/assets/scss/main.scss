@@ -26,6 +26,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover {
+    .arm {
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+    }
+    .armleft {
+      animation-name: arm-left-dinamic;
+    }
+    .armright {
+      animation-name: arm-right-dinamic;
+    }
+  }
 }
 .footer {
   height: 20vh;
@@ -77,20 +90,6 @@ body {
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-}
-@keyframes eyelid-dinamic {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 0;
-  }
-  95% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .body_eyelidup {
   border-top-left-radius: 90px;
@@ -156,20 +155,6 @@ body {
     }
   }
 }
-@keyframes mouth-interact {
-  0% {
-    transform: rotate(-10deg);
-  }
-  50% {
-    transform: rotate(-5deg);
-  }
-  70% {
-    transform: rotate(-10deg);
-  }
-  100% {
-
-  }
-}
 .tooth {
   background-color: azure;
   box-shadow: inset 10px 0 10px moccasin;
@@ -212,4 +197,115 @@ body {
   width: 100px;
   height: 10px;
   background-color: purple;
+  box-shadow: 0 0 4px rgb(70, 20, 78);
+  position: relative;
+}
+.armleft {
+  transform: rotate(35deg);
+  top: -100px;
+  left: -60px;
+  z-index: -1;
+}
+.armright {
+  transform: rotate(-35deg);
+  top: -110px;
+  left: 110px;
+  z-index: -1;
+}
+.finger {
+  width: 20px;
+  height: 10px;
+  background-color: purple;
+  position: relative;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.finger1 {
+  top: -9px;
+  left: -10px;
+  transform: rotate(45deg);
+}
+.finger2 {
+  top: -10px;
+  left: -15px;
+}
+.finger3 {
+  top: -11px;
+  left: -10px;
+  transform: rotate(-45deg);
+}
+.finger4 {
+  top: -9px;
+  left: 90px;
+  transform: rotate(-230deg);
+}
+.finger5 {
+  top: -10px;
+  left: 98px;
+  transform: rotate(-180deg);
+}
+.finger6 {
+  top: -13px;
+  left: 90px;
+  transform: rotate(-140deg);
+}
+
+
+
+
+@keyframes eyelid-dinamic {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arm-right-dinamic {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  70% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+@keyframes arm-left-dinamic {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+@keyframes mouth-interact {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  70% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
 }
