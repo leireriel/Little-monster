@@ -1,12 +1,11 @@
 body {
   margin: 0;
-  background-color: rgb(74, 141, 141);
+  background-color: rgb(161, 147, 65);
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 20px solid azure;
   box-sizing: border-box;
 }
 .body_monstruo {
@@ -119,7 +118,7 @@ body {
   animation-fill-mode: forwards;
   &:hover {
     background-color: red;
-    border-color: mix(green, white);
+    border-color: mix(green, black);
     transform: scale(5);
     .tooth {
       display: none;
