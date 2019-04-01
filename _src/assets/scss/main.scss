@@ -1,32 +1,39 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: mix(white, orange, 90%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   color: rgb(54, 48, 48);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  box-sizing: border-box;
+  min-width: 320px;
+  overflow: hidden;
 }
 .header {
-  height: 30vh;
+  height: 40vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 0 60px;
+  margin: 0;
 }
 .title {
   font-family: 'Roboto Mono', monospace;
   text-align: center;
   font-size: 40px;
+  margin: 0;
+  padding: 0 15px;
 }
 .eat {
   color: orangered;
 }
 .main {
-  height: 50vh;
+  height: 40vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,14 +50,16 @@ body {
 }
 .footer {
   height: 20vh;
+  width: 100%;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 60px;
-  font-weight: bold;
 }
 .footer_text {
   font-size: 16px;
+  margin: 0;
+  padding: 0 15px;
 }
 .hugme, .cursor_eye {
   visibility: hidden;
@@ -64,9 +73,9 @@ body {
   left: 20px;
 }
 .cursor_eye1 {
-  top: -60px;
-  left: -20px;
-  width: 200px;
+  top: -65px;
+  left: -100px;
+  width: 120px;
 }
 .cursor_eye2 {
   top: -40px;
@@ -74,8 +83,8 @@ body {
   width: 150px;
 }
 .cursor_eye3 {
-  top: -40px;
-  width: 180px;
+  top: -60px;
+  width: 120px;
 }
 .body_monstruo {
   position: absolute;
