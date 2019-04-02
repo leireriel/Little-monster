@@ -95,6 +95,43 @@ body {
   margin: 0;
   padding: 0 15px;
 }
+.first-dialogue_wrapper {
+  animation-name: dialogue-blink;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-fill-mode: inherit;
+}
+.first_dialogue {
+  position: absolute;
+  top: -45px;
+  left: 70px;
+  width: 140px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(54, 48, 48);
+  text-align: center;
+  background-image: linear-gradient(to top, white, mix(white, orange, 90%));
+}
+.triangle {
+  position: absolute;
+  top: -15px;
+  left: 105px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(54, 48, 48);
+}
+.triangle-small {
+  position: absolute;
+  top: -15px;
+  left: 106px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 9px solid white;
+}
 .hugme, .cursor_eye {
   visibility: hidden;
   position: absolute;
@@ -360,10 +397,18 @@ body {
 }
 @keyframes underscore-blink {
   0% {
-    color: transparent
+    color: transparent;
   }
   50% {
     color: auto;
+  }
+}
+@keyframes dialogue-blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
 @keyframes eyelid-dinamic {
