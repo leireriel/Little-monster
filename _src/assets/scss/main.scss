@@ -18,7 +18,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   margin: 0;
 }
 .title {
@@ -110,7 +110,7 @@ body {
     .cursor_eye1 {
       visibility: visible;
       border-bottom: 2px solid rgb(68, 30, 24);
-      background-color: mix(white, transparent);
+      background-color: white;
     }
   }
 }
@@ -122,7 +122,7 @@ body {
     .cursor_eye2 {
       visibility: visible;
       border-bottom: 2px solid rgb(68, 30, 24);
-      background-color: mix(white, transparent);
+      background-color: white;
     }
   }
 }
@@ -134,7 +134,7 @@ body {
     .cursor_eye3 {
       visibility: visible;
       border-bottom: 2px solid rgb(68, 30, 24);
-      background-color: mix(white, transparent);
+      background-color: white;
     }
   }
 }
@@ -262,7 +262,7 @@ body {
     .hugme {
       visibility: visible;
       border-bottom: 2px solid rgb(68, 30, 24);
-      background-color: mix(white, transparent);
+      background-color: white;
     }
   }
 }
