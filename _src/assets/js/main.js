@@ -1,3 +1,5 @@
 'use strict';
 
-console.log('>> Ready :)');
+const dialogueEl = document.querySelector('.first-dialogue_wrapper');
+
+const timeOut = setTimeout(myFunction, 3000);
