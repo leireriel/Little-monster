@@ -1,1 +1,1 @@
-"use strict";console.log(">> Ready :)");
+"use strict";const dialogue=document.querySelector(".first-dialogue_wrapper"),hide=function(e){dialogue.classList.add("hide-first-dialogue_wrapper")};dialogue.addEventListener("click",hide);

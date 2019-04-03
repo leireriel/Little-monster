@@ -6,5 +6,5 @@ const hide = function(event) {
     dialogue.classList.add('hide-first-dialogue_wrapper');
 }
 
-dialogue.addEventListener('click', hide);
+dialogue.addEventListener('mouseover', hide);
 
