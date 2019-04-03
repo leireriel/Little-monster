@@ -1,2 +1,2 @@
 # monstruito-o
-Little monster made from HTML and CSS
+Little monster made with HTML, CSS and a bit of JS :)
