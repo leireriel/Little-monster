@@ -1,1 +1,1 @@
-"use strict";const dialogue=document.querySelector(".first-dialogue_wrapper"),hide=function(e){dialogue.classList.add("hide-first-dialogue_wrapper")};dialogue.addEventListener("click",hide);
+"use strict";const dialogue=document.querySelector(".first-dialogue_wrapper");setTimeout(function(){dialogue.classList.add("hide-first-dialogue_wrapper")},3e3);
